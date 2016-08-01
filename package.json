@@ -1,0 +1,29 @@
+{
+  "name": "chrome-browser-object-polyfill",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run test && npm run build",
+    "test": "ava -v"
+  },
+  "ava": {
+    "babel": "inherit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pastak/chrome-browser-object-polyfill.git"
+  },
+  "author": "pastak <pasta0915@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pastak/chrome-browser-object-polyfill/issues"
+  },
+  "homepage": "https://github.com/pastak/chrome-browser-object-polyfill#readme",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0"
+  }
+}
