@@ -1,5 +1,5 @@
 import test from 'ava'
-import polyfill from '../../libs/polyfill'
+import polyfill from '../../src/libs/polyfill'
 
 let _global = {}
 
