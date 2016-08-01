@@ -1,6 +1,6 @@
 {
   "name": "chrome-browser-object-polyfill",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,12 @@
   "ava": {
     "babel": "inherit"
   },
+  "files": [
+    "package.json",
+    "README.md",
+    "index.js",
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/pastak/chrome-browser-object-polyfill.git"
