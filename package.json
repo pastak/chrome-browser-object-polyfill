@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "node_modules/.bin/babel src --out-dir dist",
     "prepublish": "npm run test && npm run build",
-    "test": "ava -v"
+    "test": "node_modules/.bin/ava -v"
   },
   "ava": {
     "babel": "inherit"
