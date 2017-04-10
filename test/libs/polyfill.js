@@ -15,33 +15,33 @@ test.afterEach((t) => {
 })
 
 test('has no `chrome`', (t) => {
-  window.browser = {tabs: {}}
+  window.browser = {i18n: {}}
   t.is(typeof window.chrome, 'undefined')
   polyfill()
-  t.is(typeof window.chrome.tabs, 'object')
+  t.is(typeof window.chrome.i18n, 'object')
 })
 
 test('has no `browser`', (t) => {
-  window.chrome = {tabs: {}}
+  window.chrome = {i18n: {}}
   t.is(typeof window.browser, 'undefined')
   polyfill()
-  t.is(typeof window.browser.tabs, 'object')
+  t.is(typeof window.browser.i18n, 'object')
 })
 
 test('has no `chrome` without `global`', (t) => {
   window = {}
-  window.browser = {tabs: {}}
+  window.browser = {i18n: {}}
   global = undefined
   polyfill()
-  t.is(typeof window.browser.tabs, 'object')
-  t.is(typeof window.chrome.tabs, 'object')
+  t.is(typeof window.browser.i18n, 'object')
+  t.is(typeof window.chrome.i18n, 'object')
 })
 
 test('has no `browser` without `global`', (t) => {
   window = {}
-  window.chrome = {tabs: {}}
+  window.chrome = {i18n: {}}
   global = undefined
   polyfill()
-  t.is(typeof window.browser.tabs, 'object')
-  t.is(typeof window.chrome.tabs, 'object')
+  t.is(typeof window.browser.i18n, 'object')
+  t.is(typeof window.chrome.i18n, 'object')
 })
